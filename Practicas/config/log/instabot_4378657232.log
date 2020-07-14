@@ -1,0 +1,14 @@
+2020-05-14 16:17:01,260 - instabot version: 0.117.0 (bot) - INFO - Instabot version: 0.117.0 Started
+2020-05-14 16:17:01,261 - instabot version: 0.117.0 (bot) - DEBUG - Bot imported from /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/instabot/bot/bot.py
+2020-05-14 16:17:01,262 - instabot version: 0.117.0 (api_login) - INFO - Not yet logged in starting: PRE-LOGIN FLOW!
+2020-05-14 16:17:01,652 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: accounts/get_prefill_candidates/ returned response: <Response [200]>
+2020-05-14 16:17:02,003 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qe/sync/ returned response: <Response [200]>
+2020-05-14 16:17:02,291 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: launcher/sync/ returned response: <Response [200]>
+2020-05-14 16:17:02,633 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: accounts/contact_point_prefill/ returned response: <Response [200]>
+2020-05-14 16:17:04,018 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: accounts/login/ returned response: <Response [400]>
+2020-05-14 16:17:04,019 - instabot version: 0.117.0 (api) - DEBUG - Responsecode indicates error; response content: b'{"message": "challenge_required", "challenge": {"url": "https://i.instagram.com/challenge/364307393/oBqycmQ17W/", "api_path": "/challenge/364307393/oBqycmQ17W/", "hide_webview_header": true, "lock": true, "logout": false, "native_flow": true}, "status": "fail", "error_type": "checkpoint_challenge_required"}'
+2020-05-14 16:17:04,019 - instabot version: 0.117.0 (api) - ERROR - Request returns 400 error!
+2020-05-14 16:17:04,019 - instabot version: 0.117.0 (api) - INFO - Instagram's error message: challenge_required
+2020-05-14 16:17:04,019 - instabot version: 0.117.0 (api) - INFO - Error type: checkpoint_challenge_required
+2020-05-14 16:17:04,020 - instabot version: 0.117.0 (bot_follow) - INFO - Follow followers of: mloiacono.it
+2020-05-14 16:17:04,020 - instabot version: 0.117.0 (api) - CRITICAL - Not logged in!

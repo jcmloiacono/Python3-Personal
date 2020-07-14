@@ -1,0 +1,103 @@
+WindowManager:
+    MainWindow:
+    WindowDarEntrada:
+    WindowVerInventario:
+    WindowDarSalida:
+    WindowCalcular:
+
+<MainWindow>:
+    name: "main"
+    
+    FloatLayout:
+        # cols:1
+        size: root.width, root.height
+
+        Button:
+            text:"Dar Entrada"
+            font_size: 14
+
+            background_normal: ''  # Para que la color funcione
+            background_color: root.color1
+
+            color: (0, 0, 0, 1)  # Color texto button
+
+            pos_hint: {'x': 0, 'top': 1}
+
+            size_hint: (1, 0.1)
+            #on_press: root.btnDarEntrada()
+            on_release: 
+                app.root.current = "winDarEntrada"
+        Button:
+            text:"Ver Inventario"
+            font_size: 12
+
+            background_normal: ''  # Para que la color funcione
+            background_color: root.color2
+
+            pos_hint: {'x': 0, 'top': 0.9}
+
+            size_hint: (1, 0.1)
+            #on_press: root.btnVerInventario()
+            on_release: 
+                app.root.current = "winInventario"
+
+        Button:
+            text:"Dar Salida"
+            font_size: 13
+
+            background_normal: ''  # Para que la color funcione
+            background_color: root.color3
+
+            pos_hint: {'x': 0, 'top': 0.8}
+
+            size_hint: (1, 0.1)
+            #on_press: root.btnDarBaja()
+            on_release: 
+                app.root.current = "winDarSalida"
+
+        Button:
+            text:"Calcular"
+            font_size: 15
+
+            background_normal: ''  # Para que la color funcione 
+            background_color: root.color4
+
+            pos_hint: {'x': 0, 'top': 0.7}
+
+            size_hint: (1, 0.1)
+            #on_press: root.btnCalcular()
+            on_release: 
+                app.root.current = "winCalcular"
+
+<WindowDarEntrada>:
+    name: "winDarEntrada"
+    
+    Button:
+        text: "Ir Atras"
+        on_release: 
+            app.root.current = "main"
+
+<WindowVerInventario>:
+    name: "winInventario"
+    
+    Button:
+        text: "Ir Atras"
+        on_release: 
+            app.root.current = "main"
+
+<WindowDarSalida>:
+    name: "winDarSalida"
+    
+    Button:
+        text: "Ir Atras"
+        on_release: 
+            app.root.current = "main"
+
+<WindowCalcular>:
+    name: "winCalcular"
+    
+    Button:
+        text: "Ir Atras"
+        on_release: 
+            app.root.current = "main"
+            

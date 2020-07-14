@@ -1,0 +1,1 @@
+([('pyqt1', '/Users/jean/Desktop/pyqt5/dist/pyqt1', 'EXECUTABLE')],)
